@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/matt_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:padding="8dp"
+        android:background="@drawable/bubble"
+        android:layout_marginVertical="64dp"
+        android:layout_marginHorizontal="32dp"
+        >
+
+        <EditText
+            android:id="@+id/translator_edit"
+            android:layout_width="0dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:textColor="@color/matt_black"
+            android:layout_weight="8"
+            android:hint="@string/hint_for_morse"
+            android:textSize="22sp"
+            android:background="@null"
+            android:inputType="text"/>
+
+        <ImageView
+            android:id="@+id/image_view_edit_to_done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            app:srcCompat="@drawable/edit_to_done"
+            android:contentDescription="send" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        />
+
+</LinearLayout>
